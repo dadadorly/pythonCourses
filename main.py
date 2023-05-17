@@ -86,26 +86,54 @@ def exo9():
     fahrenheit = (celsius * 1.8) + 32
     print('\t%0.1f degree Celsius is equal to %0.1f degree Fahrenheit' % (celsius, fahrenheit))
 
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     #print_hi('David')
-    exo1(3, 4)
-    print()
-    exo2()
-    print()
-    exo3(36)
-    print()
-    exo4("David", "LUU")
-    print()
-    exo5()
-    print()
-    exo6()
-    print()
-    exo7()
-    print()
-    exo8()
-    print()
-    exo9()
-    print()
+    # exo1(3, 4)
+    # print()
+    # exo2()
+    # print()
+    # exo3(36)
+    # print()
+    # exo4("David", "LUU")
+    # print()
+    # exo5()
+    # print()
+    # exo6()
+    # print()
+    # exo7()
+    # print()
+    # exo8()
+    # print()
+    # exo9()
+    # print()
+    choice = ''
+    while choice != "stop":
+        print()
+        choice = input("Type the exercise number : ")
+
+        match choice:
+            case "1":
+                exo1(6, 8)
+            case "2":
+                exo2()
+            case "3":
+                exo3(36)
+            case "4":
+                exo4(4, 6)
+            case "5":
+                exo5()
+            case "6":
+                exo6()
+            case "7":
+                exo7()
+            case "8":
+                exo8()
+            case "9":
+                exo9()
+            case _:
+                print("No exercises")
 
 
